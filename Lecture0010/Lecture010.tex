@@ -1,0 +1,62 @@
+\documentclass{article}
+\title{Tables, Floats and the Tabular Environment}
+\author{Jonathan Bowden}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[UKenglish]{isodate}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+Learning to make some tables
+
+\subsection{The Tabular Environment}
+
+This is the tabular environment for the table shown in the Table ~\ref{tab:grades}.
+
+\noindent There are 3 ways of creating space between paragraphs and tables.
+\vspace{0.2cm} %vertical space
+\noindent That was vspace.
+\smallskip
+\noindent That was small skip, the next is big skip.
+\bigskip
+
+
+\begin{tabular}{|c||c|}  %ll means left aligned, cc centred, use | for vertical bars, \hline for horiztonal bars
+	\hline
+	Name& Jonathan Bowden\\
+	\hline
+	Subject& Writing with \LaTeX \\
+	\hline
+	Grade& A* \\
+	\hline
+\end{tabular}
+
+\subsection{Floats: Table}
+
+\begin{table}[htbp] %h is here, LaTeX tries to put it in a sensible place, t = top of next page, b = bottom of next page, p = separate page
+	\caption{My Gradebook}	
+	\begin{center}
+		\begin{tabular}{|c||c|}
+			\hline
+			Name& Jonathan Bowden\\
+			\hline
+			Subject& Writing with \LaTeX \\
+			\hline
+			Grade& A* \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\label{tab:grades}
+\end{table}
+
+\subsection{References}
+
+You can see my grades in the Table \ref{tab:grades}.  % ~ ensures the ref is put on the same line
+
+\section{Conclusion}
+
+Now I know how to create basic tables.
+
+\end{document}
