@@ -1,0 +1,59 @@
+\documentclass{proc}
+\title{Including Graphics}
+\author{Jonathan Bowden}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[UKenglish]{isodate}
+\usepackage{graphicx}
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+Picture books are just \emph{better}.
+
+\subsection{Including Graphics}
+
+This is a banana in a JPG.
+
+\begin{center}
+\includegraphics[width=5cm]{banana.jpg}
+\end{center}
+
+This is a fish chart in png.
+
+\begin{center}
+\includegraphics[width=5cm]{fish.png}
+\end{center}
+
+\subsection{Float: Figure Environment}
+
+In my article, I want to include a JPG image of a banana. You can see this image in the Figure \ref{fig:banana}.
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=5cm]{banana.jpg}
+		\caption{This is a banana}
+		\label{fig:banana}		
+	\end{center}
+\end{figure}
+
+\noindent In my article I want to include a PNG image of a chart that looks like a fish. You can see this image in Figure \ref{fig:fish}.
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=5cm]{fish.png}
+		\caption{This is a fish chart}
+		\label{fig:fish}		
+	\end{center}
+\end{figure}
+
+
+
+\section{Conclusion}
+
+Remember you can set the width of these graphics, and \LaTeX will adjust them for you. 
+
+\end{document}
