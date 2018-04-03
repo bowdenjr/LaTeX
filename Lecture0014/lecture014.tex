@@ -1,0 +1,49 @@
+\documentclass{article}
+\title{Mathematical Symbols}
+\author{Jonathan Bowden}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[UKenglish]{isodate}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+This document will create some mathematics.
+
+\subsection{Formulae}
+
+Mathematical equations can be created inline as $5*4=20$ and can include a number of different math symbols, such as $7 \leq  10$ is true.
+
+
+You can also put your equation on a separate line as \[5^2 = 25\] to call out the formula.
+
+\subsection{Float: Equations}
+
+My first result is shown in Equation \ref{eq:minutes}, which shows the number of minutes in a day.
+
+\begin{equation}
+	24*60 = 1440
+	\label{eq:minutes}
+\end{equation}
+
+There are a lot of other interesting mathematics sybols that I can learn, as shown in Equation \ref{eq:symbols}.
+
+\begin{equation}
+	7^4+6*17\geq 13 X \alpha 13 \exists \rightarrow Nonesense
+	\label{eq:symbols}
+\end{equation}
+
+Here is a real equation for Person's Product Momement Correlation Coefficient for a sample:
+
+\begin{equation}
+	r_{xy} = \frac{n\sum{x_i y_i}- \sum{x_i} \sum{y_i}}
+		{\sqrt{n\sum{x_i}^2 - (\sum{x_i})^2}\sqrt{n\sum{{y_i}^2 - (\sum{y_i})^2}}}
+\end{equation}
+
+\section{Conclusion}
+
+This was a brief primer on \LaTeX mathematics.
+
+\end{document}
